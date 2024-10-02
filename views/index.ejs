@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Transporte de Funcionários</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Transporte</h1>
+    <form action="/transporte" method="POST">
+      <label for="nome_funcionario">Nome do Funcionário:</label>
+      <input type="text" id="nome_funcionario" name="nome_funcionario" required>
+      
+      <label for="partida">Ponto de Partida:</label>
+      <input type="text" id="partida" name="partida" required>
+      
+      <label for="destino">Destino:</label>
+      <input type="text" id="destino" name="destino" required>
+      
+      <label for="data_viagem">Data da Viagem:</label>
+      <input type="date" id="data_viagem" name="data_viagem" required>
+      
+      <label for="horario">Horário:</label>
+      <input type="time" id="horario" name="horario" required>
+      
+      <label for="veiculo">Veículo:</label>
+      <input type="text" id="veiculo" name="veiculo" required>
+      
+      <label for="capacidade_veiculo">Capacidade do Veículo:</label>
+      <input type="number" id="capacidade_veiculo" name="capacidade_veiculo" required>
+      
+      <label for="status_transporte">Status do Transporte:</label>
+      <select id="status_transporte" name="status_transporte">
+        <option value="Pendente">Pendente</option>
+        <option value="Em Andamento">Em Andamento</option>
+        <option value="Concluído">Concluído</option>
+      </select>
+      
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
